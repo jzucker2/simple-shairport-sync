@@ -18,7 +18,6 @@ ENV MQTT_TOPIC="shairport/sync"
 
 # Copy the config template
 COPY shairport_sync/shairport-sync.conf /etc/shairport-sync/shairport-sync.conf.template
-#COPY shairport_sync/shairport-sync.conf /etc/shairport-sync.conf
 
 RUN chmod +rw /etc/shairport-sync.conf
 
