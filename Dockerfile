@@ -4,6 +4,12 @@ FROM mikebrady/shairport-sync:${SHAIRPORT_SYNC_VERSION} AS builder
 
 # Set environment variables (if needed)
 ENV AIRPLAY_NAME="Simple Shairport Sync"
+ENV OUTPUT_DEVICE="hw:Audio"
+ENV HOSTNAME="localhost"
+ENV USERNAME="user"
+ENV PASSWORD="pass"
+ENV TOPIC="shairport/sync"
+
 
 COPY shairport_sync/shairport-sync.conf /etc/shairport-sync.conf
 
