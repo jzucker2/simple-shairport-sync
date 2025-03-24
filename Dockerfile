@@ -8,4 +8,4 @@ RUN chmod +x /configure_shairport_sync.sh
 
 # CMD ["/configure_shairport_sync.sh"]
 
-RUN /configure_shairport_sync.sh
+RUN sh /configure_shairport_sync.sh
