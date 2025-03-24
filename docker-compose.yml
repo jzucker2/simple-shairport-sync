@@ -10,6 +10,8 @@ services:
     extra_hosts:
       - "${DOCKER_LOCALHOST}:host-gateway"
     environment:
+      - AIRPLAY_NAME=${AIRPLAY_NAME}
+      - ENABLE_MQTT=${ENABLE_MQTT}
       - MQTT_HOSTNAME=${MQTT_HOSTNAME}
     devices:
       - "/dev/snd" # ALSA device, omit if using PulseAudio
