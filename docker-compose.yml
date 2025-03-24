@@ -2,7 +2,9 @@ services:
 
   shairport-sync:
     container_name: shairport-sync
-    image: mikebrady/shairport-sync:${SHAIRPORT_SYNC_TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
     labels:
       - wud.tag.include=${WUD_SEMVAR_INCLUDE_LABEL}
       - wud.link.template=https://github.com/mikebrady/shairport-sync/releases/tag/$${major}.$${minor}.$${patch}
