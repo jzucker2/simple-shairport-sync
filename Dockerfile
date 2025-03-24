@@ -7,13 +7,16 @@ RUN apk -U add \
 
 # Set environment variables (if needed)
 ENV S6_KEEP_ENV=1
-ENV AIRPLAY_NAME="Simple Shairport Sync"
+ENV AIRPLAY_NAME="SimpleShairportSync"
 ENV OUTPUT_DEVICE="hw:0"
+ENV MIXER_CONTROL_NAME="PCM"
+ENV ENABLE_MQTT="no"
 ENV MQTT_HOSTNAME="localhost"
 ENV MQTT_PORT=1883
 ENV MQTT_USERNAME="user"
 ENV MQTT_PASSWORD="pass"
 ENV MQTT_TOPIC="shairport/sync"
+ENV MQTT_AUTODISCOVERY="homeassistant"
 
 
 # Copy the config template
