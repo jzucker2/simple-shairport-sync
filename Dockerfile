@@ -13,7 +13,7 @@ ENV TOPIC="shairport/sync"
 
 COPY shairport_sync/shairport-sync.conf /etc/shairport-sync.conf
 
-RUN chmod +r /etc/shairport-sync.conf
+RUN chmod +rw /etc/shairport-sync.conf
 
 COPY scripts/run_shairport_sync.sh /usr/local/bin/run_shairport_sync.sh
 
