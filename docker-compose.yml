@@ -4,16 +4,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    labels:
-      - wud.tag.include=${WUD_SEMVAR_INCLUDE_LABEL}
-      - wud.link.template=https://github.com/mikebrady/shairport-sync/releases/tag/$${major}.$${minor}.$${patch}
     restart: unless-stopped
     network_mode: host
     privileged: true
     extra_hosts:
       - "${DOCKER_LOCALHOST}:host-gateway"
     environment:
-      - HOSTNAME=${MQTT_HOSTNAME}
+      - MQTT_HOSTNAME=${MQTT_HOSTNAME}
     devices:
       - "/dev/snd" # ALSA device, omit if using PulseAudio
     cap_add:
