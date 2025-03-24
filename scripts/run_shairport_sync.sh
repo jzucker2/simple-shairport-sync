@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+set -e
 
 # Variables (can be set via environment variables or directly here)
 OUTPUT_DEVICE=${OUTPUT_DEVICE:-"hw:Audio"}
@@ -20,4 +21,4 @@ sed -i "s|\"password\": \".*\"|\"password\": \"$PASSWORD\"|g" "$CONFIG_FILE"
 sed -i "s|\"topic\": \".*\"|\"topic\": \"$TOPIC\"|g" "$CONFIG_FILE"
 
 # Start shairport-sync
-/init ./run.sh
+exec "$@"
