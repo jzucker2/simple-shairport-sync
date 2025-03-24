@@ -1,6 +1,6 @@
 # simple-shairport-sync
 
-Simple set up
+Simple set up, with plans to start using.
 
 Would be cool to add some instructions (someday)
 
