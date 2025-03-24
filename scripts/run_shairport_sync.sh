@@ -18,3 +18,6 @@ sed -i "s|\"port\": .*|\"port\": $PORT|g" "$CONFIG_FILE"
 sed -i "s|\"username\": \".*\"|\"username\": \"$USERNAME\"|g" "$CONFIG_FILE"
 sed -i "s|\"password\": \".*\"|\"password\": \"$PASSWORD\"|g" "$CONFIG_FILE"
 sed -i "s|\"topic\": \".*\"|\"topic\": \"$TOPIC\"|g" "$CONFIG_FILE"
+
+# Start shairport-sync
+/init ./run.sh

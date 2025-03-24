@@ -2,10 +2,8 @@
 ARG SHAIRPORT_SYNC_VERSION=latest
 FROM mikebrady/shairport-sync:${SHAIRPORT_SYNC_VERSION} AS builder
 
-COPY scripts/configure_shairport_sync.sh /configure_shairport_sync.sh
+COPY scripts/run_shairport_sync.sh /configure_shairport_sync.sh
 
-RUN chmod +x /configure_shairport_sync.sh
+RUN chmod +x /run_shairport_sync.sh
 
-# CMD ["/configure_shairport_sync.sh"]
-
-RUN sh /configure_shairport_sync.sh
+CMD ["sh", "/run_shairport_sync.sh"]
