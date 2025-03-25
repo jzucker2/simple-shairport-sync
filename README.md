@@ -33,3 +33,7 @@ services:
         max-size: "200k"
         max-file: "10"
 ```
+
+## Issues
+
+* https://github.com/mikebrady/shairport-sync/issues/1858
