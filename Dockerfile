@@ -1,5 +1,5 @@
 # https://fastapi.tiangolo.com/deployment/docker/
-FROM mikebrady/shairport-sync:4.3.7 AS builder
+FROM mikebrady/shairport-sync:5.0.0 AS builder
 
 RUN apk -U add \
         gettext
