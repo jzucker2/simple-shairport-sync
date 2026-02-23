@@ -6,7 +6,7 @@ Would be cool to add some instructions (someday)
 
 The `shairport-sync.conf` file is located here: https://github.com/mikebrady/shairport-sync/blob/master/scripts/shairport-sync.conf
 
-This _might_ work ...
+This _might_ work ... (so far)
 
 Example for running this on your own:
 
@@ -33,3 +33,11 @@ services:
         max-size: "200k"
         max-file: "10"
 ```
+
+## Updates
+
+* https://github.com/mikebrady/shairport-sync/releases/tag/5.0
+
+## Issues
+
+* https://github.com/mikebrady/shairport-sync/issues/1858
