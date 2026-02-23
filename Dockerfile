@@ -5,7 +5,6 @@ RUN apk -U add \
         gettext
 
 # Set environment variables (if needed)
-ENV S6_KEEP_ENV=1
 ENV AIRPLAY_NAME="SimpleShairportSync"
 ENV OUTPUT_DEVICE="hw:0"
 ENV MIXER_CONTROL_NAME="PCM"
@@ -31,4 +30,4 @@ RUN chmod +x /usr/local/bin/run_shairport_sync.sh
 
 
 # Start Shairport Sync with the customized configuration
-ENTRYPOINT ["/init","/usr/local/bin/run_shairport_sync.sh"]
+ENTRYPOINT ["/usr/local/bin/run_shairport_sync.sh"]
