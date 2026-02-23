@@ -34,6 +34,10 @@ services:
         max-file: "10"
 ```
 
+## Updates
+
+* https://github.com/mikebrady/shairport-sync/releases/tag/5.0
+
 ## Issues
 
 * https://github.com/mikebrady/shairport-sync/issues/1858
