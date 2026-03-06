@@ -2,6 +2,8 @@
 
 Simple set up, with plans to start using.
 
+Move away from custom docker image ...
+
 Would be cool to add some instructions (someday)
 
 The `shairport-sync.conf` file is located here: https://github.com/mikebrady/shairport-sync/blob/master/scripts/shairport-sync.conf
