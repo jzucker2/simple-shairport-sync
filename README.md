@@ -6,6 +6,8 @@ Move away from custom docker image ... on this PR
 
 Would be cool to add some instructions (someday)
 
+Simplify!
+
 The `shairport-sync.conf` file is located here: https://github.com/mikebrady/shairport-sync/blob/master/scripts/shairport-sync.conf
 
 This _might_ work ... (so far)
