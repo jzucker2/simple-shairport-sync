@@ -2,7 +2,7 @@
 
 Simple set up, with plans to start using.
 
-Move away from custom docker image ...
+Move away from custom docker image ... on this PR
 
 Would be cool to add some instructions (someday)
 
