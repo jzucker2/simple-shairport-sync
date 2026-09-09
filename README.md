@@ -6,7 +6,7 @@ Move away from custom docker image ... on this PR
 
 Would be cool to add some instructions (someday)
 
-Simplify! (Get rid of the env stuff, finally!)
+Simplify! (Get rid of the env stuff, finally! Finally!)
 
 The `shairport-sync.conf` file is located here: https://github.com/mikebrady/shairport-sync/blob/master/scripts/shairport-sync.conf
 
