@@ -10,7 +10,7 @@ Simplify! (Get rid of the env stuff, finally! Finally!)
 
 The `shairport-sync.conf` file is located here: https://github.com/mikebrady/shairport-sync/blob/master/scripts/shairport-sync.conf
 
-This _might_ work ... (so far)
+This _might_ work ... (so far, hopefully)
 
 Example for running this on your own:
 
